@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All-in-One Percentage Calculator | Real-Time Tools</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Left Navigation -->
+    <nav class="sidebar">
+        <div class="logo">CalcPro</div>
+        <ul class="nav-items">
+            <li class="active"><a href="#percentage"><i class="fas fa-percentage"></i> Percentage</a></li>
+            <li><a href="#discount"><i class="fas fa-tag"></i> Discount</a></li>
+            <!-- Add other menu items -->
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+        <header>
+            <h1>Percentage Calculator</h1>
+            <button id="themeToggle"><i class="fas fa-moon"></i></button>
+        </header>
+
+        <!-- Percentage Calculator Section -->
+        <section class="calculator-card">
+            <div class="tool-group">
+                <h3>Basic Calculations</h3>
+                <div class="input-group">
+                    <label>What is <input type="number" id="percentOf">% of 
+                    <input type="number" id="numberY"></label>
+                    <div class="result">Result: <span id="result1"></span></div>
+                </div>
+                <!-- Repeat for other 9 basic tools -->
+            </div>
+            
+            <!-- Advanced Tools Accordion -->
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Business Tools <i class="fas fa-chevron-down"></i></button>
+                    <div class="accordion-content">
+                        <!-- Profit Margin Calculator -->
+                        <div class="input-group">
+                            <label>Cost Price: <input type="number" id="costPrice"></label>
+                            <label>Selling Price: <input type="number" id="sellPrice"></label>
+                            <div class="result">Profit Margin: <span id="profitMarginResult"></span></div>
+                        </div>
+                        <!-- Other advanced tools -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other Tools Sections -->
+        <section id="discount" class="hidden">
+            <!-- Discount Calculator -->
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-links">
+                <a href="/pages/about.html">About</a>
+                <a href="/pages/privacy.html">Privacy</a>
+                <!-- Other links -->
+            </div>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
